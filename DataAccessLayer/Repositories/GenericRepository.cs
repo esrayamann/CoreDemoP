@@ -49,5 +49,10 @@ namespace DataAccessLayer.Repositories
             c.Update(t);
             c.SaveChanges();
         }
+
+        public List<T> GetListByType(Expression<Func<T, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
